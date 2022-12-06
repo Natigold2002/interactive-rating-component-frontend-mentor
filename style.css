@@ -1,0 +1,115 @@
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: overpass,Arial, Helvetica, sans-serif;
+}
+p {
+  font-size: 15px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.card {
+  width: 400px;
+  height: 370px;
+  background: var(--Very-Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 5rem;
+}
+.card--left {
+  align-items: flex-start;
+}
+.card--center {
+  align-items: center;
+  justify-content: center;
+}
+.card p {
+  padding: 0 40px;
+}
+.card h2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0 38px;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Dark-Blue);
+  border-radius: 50%;
+  margin: 10px;
+  padding: 0;
+}
+.circle--click {
+  background: var(--Light-Grey);
+  color: rgb(145, 27, 27);
+}
+.select .circle {
+  cursor: pointer;
+}
+
+.select .circle:hover {
+  background: var(--color-primary);
+  color: var(--White);
+}
+.btn {
+  outline: none;
+  padding: 10px;
+
+  border-radius: 30px;
+  width: 80%;
+  margin: 20px 35px;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--White);
+}
+.btn:hover {
+  background: var(--White);
+  color: var(--color-primary);
+}
+.card .icon {
+  margin: -40px 0px 30px 23px;
+}
+.hidden {
+  display: none;
+}
+footer {
+  margin-top: 5rem;
+}
+
+.outoffive{
+  border-radius: 20px;
+  background: var(--Medium-Grey);
+  padding: 0 10px;
+}
